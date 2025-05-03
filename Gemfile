@@ -21,7 +21,7 @@ gem "devise"
 gem "haml-rails"
 gem "simple_form"
 gem "pagy"
-
+gem "rails-i18n"
 
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
