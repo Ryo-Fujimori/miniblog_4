@@ -10,8 +10,8 @@ RSpec.describe "Posts", type: :system do
   # ポストが作成されることを確認する
   it "creates a post" do
     visit new_post_path
-    fill_in "Content", with: "This is a test post."
-    click_button "Create Post"
+    fill_in "コンテンツ", with: "This is a test post."
+    click_button "保存"
     expect(page).to have_content("Post was successfully created.")
     expect(page).to have_content("This is a test post.")
   end
@@ -23,40 +23,37 @@ RSpec.describe "Posts", type: :system do
   # postが更新されることを確認する
   it "updates a post" do
     visit edit_post_path(post)
-    fill_in "Content", with: "This is an updated test post."
-    click_button "Update Post"
+    fill_in "コンテンツ", with: "This is an updated test post."
+    click_button "保存"
     expect(page).to have_content("Post was successfully updated.")
     expect(page).to have_content("This is an updated test post.")
   end
   # postが削除されることを確認する
   it "destroys a post" do
     visit post_path(post)
-    click_link "Destroy"
+    click_link "削除"
     expect(page).to have_content("Post was successfully destroyed.")
     expect(page).not_to have_content("This is a test post.")
   end
   # contentが空の投稿を作成しようとしたときにエラーメッセージが表示されることを確認する
   it "does not create a post with empty content" do
     visit new_post_path
-    fill_in "Content", with: ""
-    click_button "Create Post"
-    expect(page).to have_content("Post was not created.")
-    expect(page).to have_content("Content can't be blank")
+    fill_in "コンテンツ", with: ""
+    click_button "保存"
+    expect(page).to have_content("Contentを入力してください")
   end
   # contentが空の投稿を更新しようとしたときにエラーメッセージが表示されることを確認する
   it "does not update a post with empty content" do
     visit edit_post_path(post)
-    fill_in "Content", with: ""
-    click_button "Update Post"
-    expect(page).to have_content("Post was not updated.")
-    expect(page).to have_content("Content can't be blank")
+    fill_in "コンテンツ", with: ""
+    click_button "保存"
+    expect(page).to have_content("Contentを入力してください")
   end
   # contentが200文字以上の投稿を作成しようとしたときにエラーメッセージが表示されることを確認する
   it "does not create a post with content over 200 characters" do
     visit new_post_path
-    fill_in "Content", with: "a" * 201
-    click_button "Create Post"
-    expect(page).to have_content("Post was not created.")
-    expect(page).to have_content("Content is too long (maximum is 200 characters)")
+    fill_in "コンテンツ", with: "a" * 201
+    click_button "保存"
+    expect(page).to have_content("Contentは200文字以内で入力してください")
   end
 end
