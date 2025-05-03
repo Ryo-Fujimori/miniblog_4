@@ -1,0 +1,12 @@
+%h1 
+  = I18n.t('view.post_show')
+-# ユーザーのポスト情報
+%p
+  = I18n.t('attributes.post.content')
+  = @post.content
+%p
+  = I18n.t('attributes.post.created_at')
+  = @post.created_at
+%p
+  = link_to I18n.t('view.post_edit'), edit_post_path(@post), class: 'btn btn-primary'
+  = link_to I18n.t('delete'), post_path(@post), method: :delete, data: { confirm: I18n.t('view.post_delete_confirm') }, class: 'btn btn-danger'
