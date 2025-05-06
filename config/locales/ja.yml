@@ -35,8 +35,8 @@ ja:
       new: "新規投稿"
       edit: "投稿編集"
     user:
-      user_login: "ログイン"
-      user_logout: "ログアウト"
+      login: "ログイン"
+      logout: "ログアウト"
   attributes:
     blank: "未設定"
     user:
