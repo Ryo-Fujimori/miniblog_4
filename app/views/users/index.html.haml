@@ -1,0 +1,6 @@
+%h1
+  = I18n.t('view.user_index')
+%ul.list-group
+  - @users.each do |user|
+    %li.list-group-item
+      = link_to user.email, user_path(user)

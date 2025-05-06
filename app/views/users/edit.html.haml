@@ -1,0 +1,17 @@
+%h1 Edit User
+= form_with model: @user, local: true do |form|
+  .field
+    = form.label :name
+    = form.text_field :name
+  .field
+    = form.label :email
+    = form.email_field :email
+  .field
+    = form.label :profile
+    = form.text_area :profile
+  .field
+    = form.label :blog_url
+    = form.text_field :blog_url
+  .actions
+    = form.submit 'Save'
+= link_to 'Back', users_path
