@@ -3,11 +3,11 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   root "posts#index"
-  resources :posts, only: %i[ index show ]
-  resources :users, only: [ :index, :show, :edit, :update ]
 
-  #ログイン中のみ新規ポスト作成、編集、削除が可能
-  namespace :users do
+  # ログイン中のみ新規ポスト作成、編集、削除が可能
+  scope module: :users do
     resources :posts, only: %i[ new create edit update destroy ]
   end
+  resources :posts, only: %i[ index show ]
+  resources :users, only: [ :index, :show ]
 end

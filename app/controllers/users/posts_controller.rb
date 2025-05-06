@@ -1,4 +1,4 @@
-class User::PostsController < ApplicationController
+class Users::PostsController < ApplicationController
   before_action :set_post, only: [ :edit, :update, :destroy ]
 
   def new
