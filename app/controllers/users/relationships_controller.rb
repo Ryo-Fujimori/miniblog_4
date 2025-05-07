@@ -1,17 +1,14 @@
 class Users::RelationshipsController < ApplicationController
-  before_action :set_user, only: [ :create, :destroy ]
-
   def create
-    current_user.follow(@user)
+    if current_user.follow(params[:user_id])
+      redirect_to users_path, notice: "フォローしました"
+    else
+      render users_path, alert: "フォローに失敗しました"
+    end
   end
 
   def destroy
-    current_user.unfollow(@user)
-  end
-
-  private
-
-  def set_user
-    @user = User.find(params[:id])
+    current_user.unfollow(params[:id])
+    redirect_to users_path, notice: "フォローを解除しました"
   end
 end
