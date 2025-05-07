@@ -6,7 +6,6 @@ class Relationship < ApplicationRecord
   validate :cannot_follow_self
 
   private
-
   def cannot_follow_self
     errors.add(:base, "You cannot follow yourself") if follower_id == followed_id
   end
