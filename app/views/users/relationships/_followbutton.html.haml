@@ -1,0 +1,7 @@
+-# ユーザーが未フォローの場合のフォローボタン
+-# フォロー中の場合は、フォローボタンを表示しない
+- if user_signed_in?
+  - if !current_user.following?(@user)
+    = link_to "フォロー", relationships_path(followed_id: @user.id), method: :post, class: "btn btn-primary"
+  - else
+    = link_to "フォロー中", relationship_path(@user.id), method: :delete, class: "btn btn-secondary"
