@@ -1,11 +1,15 @@
 require 'rails_helper'
+Dir[Rails.root.join('spec/support/*.rb')].each { |f| require f }
 
 RSpec.describe "Posts", type: :system do
   # 投稿作成
-  let(:post) { Post.create(content: "This is a test post.") }
+  let(:user) { User.create(email: "test@example.com", password: "password") }
+  let(:post) { Post.create(content: "This is a test post.", user_id: user.id) }
+
 
   before do
     driven_by(:rack_test)
+    sign_in user, scope: :user
   end
   # ポストが作成されることを確認する
   it "creates a post" do
@@ -17,12 +21,12 @@ RSpec.describe "Posts", type: :system do
   end
   # post詳細ページに遷移することを確認する
   it "shows a post" do
-    visit post_path(post)
+    visit post_path(post.id)
     expect(page).to have_content("This is a test post.")
   end
   # postが更新されることを確認する
   it "updates a post" do
-    visit edit_post_path(post)
+    visit edit_post_path(post.id)
     fill_in "コンテンツ", with: "This is an updated test post."
     click_button "保存"
     expect(page).to have_content("Post was successfully updated.")

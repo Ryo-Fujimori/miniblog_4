@@ -10,5 +10,13 @@ module Miniblog4
 
     config.autoload_lib(ignore: %w[assets tasks])
     config.i18n.default_locale = :ja
+    config.generators do |g|
+      g.helper false
+      g.test_framework :rspec,
+                      routing_specs: false,
+                      request_specs: false,
+                      view_specs: false
+    end
   end
 end
+
