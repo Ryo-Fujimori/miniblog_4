@@ -1,12 +1,12 @@
 %h1 
-  = I18n.t('view.post_show')
+  = t('view.post_show')
 -# ユーザーのポスト情報
 %p
-  = I18n.t('attributes.post.content')
+  = t('attributes.post.content')
   = @post.content
 %p
-  = I18n.t('attributes.post.created_at')
+  = t('attributes.post.created_at')
   = @post.created_at
 %p
-  = link_to I18n.t('view.post_edit'), edit_post_path(@post), class: 'btn btn-primary'
-  = link_to I18n.t('delete'), post_path(@post), method: :delete, data: { turbo_method: :delete, turbo_confirm:  I18n.t('destroy_confirm') }, class: 'btn btn-danger'
+  = link_to t('view.post_edit'), edit_post_path(@post), class: 'btn btn-primary'
+  = link_to t('delete'), post_path(@post), method: :delete, data: { turbo_method: :delete, turbo_confirm:  t('destroy_confirm') }, class: 'btn btn-danger'

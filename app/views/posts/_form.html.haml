@@ -1,6 +1,5 @@
--# simple_formで Postのフォーム作成
 = simple_form_for post do |f|
   .form-inputs
-    = f.input :content, label: I18n.t('attributes.post.content') , class: 'form-control'
+    = f.input :content, label: t('attributes.post.content') , class: 'form-control'
   .form-actions
-    = f.submit I18n.t('save'), class: 'btn btn-primary'
+    = f.submit t('save'), class: 'btn btn-primary'
