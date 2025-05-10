@@ -1,32 +1,32 @@
 %h1
-  = I18n.t('view.user_show')
+  = t('view.user_show')
 %p
-  = I18n.t('attributes.user.email')
+  = t('attributes.user.email')
   %div
     = @user.email
 %p
-  = I18n.t('attributes.user.name')
+  = t('attributes.user.name')
   %div
     - if @user.name.blank?
-      = I18n.t('attributes.blank')
+      = t('attributes.blank')
     - else
       = @user.name
 %p
-  = I18n.t('attributes.user.profile')
+  = t('attributes.user.profile')
   %div
     - if @user.profile.blank?
-      = I18n.t('attributes.blank')
+      = t('attributes.blank')
     - else
       = @user.profile
 %p
-  = I18n.t('attributes.user.blog_url')
+  = t('attributes.user.blog_url')
   %div
     - if @user.blog_url.blank?
-      = I18n.t('attributes.blank')
+      = t('attributes.blank')
     - else
       = @user.blog_url
 %p
-  = I18n.t('attributes.user.created_at')
+  = t('attributes.user.created_at')
   %div
     = @user.created_at.strftime('%Y-%m-%d %H:%M:%S')
 = link_to 'Edit', edit_user_registration_path(@user), class: 'btn btn-primary'
