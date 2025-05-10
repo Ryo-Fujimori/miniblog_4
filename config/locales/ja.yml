@@ -21,13 +21,16 @@ ja:
     user_login: "ユーザーログイン"
   flash:
     post:
-      create: "投稿が作成されました"
-      update: "投稿が更新されました"
-      destroy: "投稿が削除されました"
+      create: "投稿を作成しました。"
+      update: "投稿を更新しました。"
+      destroy: "投稿を削除しました。"
+      create_error: "投稿の作成に失敗しました。"
+      update_error: "投稿の更新に失敗しました。"
+      destroy_error: "投稿の削除に失敗しました。"
     user:
-      create: "ユーザーが作成されました"
-      update: "ユーザーが更新されました"
-      destroy: "ユーザーが削除されました"
+      create: "ユーザーが作成されました。"
+      update: "ユーザーが更新されました。"
+      destroy: "ユーザーが削除されました。"
   controller:
     post:
       index: "投稿一覧"

@@ -8,9 +8,9 @@ class Users::PostsController < ApplicationController
   def create
     @post = current_user.posts.new(post_params)
     if @post.save
-      redirect_to posts_path, notice: "Post was successfully created."
+      redirect_to posts_path, notice: t("flash.post.create")
     else
-      render :new, status: :unprocessable_entity, notice: "Post was not created."
+      render :new, status: :unprocessable_entity, notice: t("flash.post.create_error")
     end
   end
 
@@ -19,15 +19,15 @@ class Users::PostsController < ApplicationController
 
   def update
     if @post.update(post_params)
-      redirect_to @post, notice: "Post was successfully updated."
+      redirect_to @post, notice: t("flash.post.update")
     else
-      render :edit, status: :unprocessable_entity, notice: "Post was not updated."
+      render :edit, status: :unprocessable_entity, notice: t("flash.post.update_error")
     end
   end
 
   def destroy
     @post.destroy!
-    redirect_to posts_url, notice: "Post was successfully destroyed."
+    redirect_to posts_url, notice: t("flash.post.destroy")
   end
   private
   def post_params

@@ -15,7 +15,7 @@ RSpec.describe "Posts", type: :system do
     visit new_post_path
     fill_in "コンテンツ", with: "This is a test post."
     click_button "保存"
-    expect(page).to have_content("作成しました")
+    expect(page).to have_content("投稿を作成しました。")
     expect(page).to have_content("This is a test post.")
   end
   it "post詳細ページに遷移すること" do
@@ -26,7 +26,7 @@ RSpec.describe "Posts", type: :system do
     visit edit_post_path(post)
     fill_in "コンテンツ", with: "This is an updated test post."
     click_button "保存"
-    expect(page).to have_content("更新しました。")
+    expect(page).to have_content("投稿を更新しました。")
     expect(page).to have_content("This is an updated test post.")
   end
   it "postが削除されること" do
