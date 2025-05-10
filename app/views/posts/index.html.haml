@@ -2,6 +2,5 @@
   = t('view.post_index')
 %ul.list-group
   - @posts.each do |post|
-    %li.list-group-item
-      %p= link_to post.content, post_path(post)
-      %hr
+    %li.list-group-item.border-bottom
+      = link_to post.content, post_path(post)
