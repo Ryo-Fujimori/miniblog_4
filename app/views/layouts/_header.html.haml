@@ -6,10 +6,10 @@
       class: 'btn btn-danger'
   %div 
     = link_to t('view.post_new'), new_post_path, class: 'btn btn-primary'
+    = link_to t('view.user_index'), users_path, class: 'btn btn-primary'
 - else 
   %div 
     = link_to t('view.user_login'), new_user_session_path, class: 'btn btn-primary'
     = link_to t('view.user_signup'), new_user_registration_path, class: 'btn btn-primary'
 %div
   = link_to t('view.post_index'), posts_path, class: 'btn btn-primary'
-  = link_to t('view.post_new'), new_post_path, class: 'btn btn-primary'
