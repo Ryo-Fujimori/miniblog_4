@@ -1,0 +1,7 @@
+%h1
+  = t('view.user_index')
+%ul.list-group
+  - @users.each do |user|
+    %li.list-group-item
+      = link_to user.email, user_path(user)
+      = render 'users/relationships/followbutton', user: user unless user == current_user
