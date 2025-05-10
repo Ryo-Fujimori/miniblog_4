@@ -1,0 +1,27 @@
+ja:
+  back: "戻る"
+  cancel: "キャンセル"
+  delete: "削除"
+  edit: "編集"
+  save: "保存"
+  submit: "送信"
+  update: "更新"
+  yes: "はい"
+  no: "いいえ"
+  destroy_confirm: "本当に削除しますか？"
+  view:
+    post_index: "投稿一覧"
+    post_show: "投稿詳細"
+    post_new: "新規投稿"
+    post_edit: "投稿編集"
+  controller:
+    post:
+      index: "投稿一覧"
+      show: "投稿詳細"
+      new: "新規投稿"
+      edit: "投稿編集"
+  attributes:
+    post:
+      content: "コンテンツ"
+      created_at: "作成日時"
+      updated_at: "更新日時"

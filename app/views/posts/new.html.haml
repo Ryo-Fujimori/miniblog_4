@@ -1,0 +1,4 @@
+%h1
+  = t('view.post_new')
+= render 'form', post: @post
+= link_to t('back'), posts_path, class: 'btn btn-secondary'

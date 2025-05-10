@@ -1,0 +1,6 @@
+%h1
+  = t('view.post_index')
+%ul.list-group
+  - @posts.each do |post|
+    %li.list-group-item.border-bottom
+      = link_to post.content, post_path(post)
