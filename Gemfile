@@ -22,6 +22,9 @@ gem "haml-rails"
 gem "simple_form"
 gem "pagy"
 gem "rails-i18n"
+# 画像アップロード用
+gem "image_processing"
+
 
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
