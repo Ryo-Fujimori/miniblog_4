@@ -53,6 +53,7 @@ ja:
       updated_at: "更新日時"
     post:
       content: "コンテンツ"
+      imgage: "画像"
       created_at: "作成日時"
       updated_at: "更新日時"
 # devise-i18n追加分
