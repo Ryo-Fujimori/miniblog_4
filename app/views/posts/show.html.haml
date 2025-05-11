@@ -20,4 +20,4 @@
           = link_to user.email, user_path(user)
           %span
             = t('view.favorites.created_at')
-            = time_ago_in_words(user.created_at)
+            = user.created_at
