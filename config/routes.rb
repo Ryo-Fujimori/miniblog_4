@@ -14,6 +14,11 @@ Rails.application.routes.draw do
     resources :favorites, only: %i[ create destroy ]
   end
   
-  resources :posts, only: %i[ index show ]
+  resources :posts, only: %i[ index show ] do
+    member do
+      post :reply
+    end
+  end
+
   resources :users, only: [ :index, :show ]
 end

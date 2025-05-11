@@ -1,6 +1,16 @@
 class Users::PostsController < ApplicationController
   before_action :set_post, only: [ :edit, :update, :destroy ]
 
+  # 返信用アクション
+  def reply
+    @reply = @post.replies.new(post_params)
+    if @reply.save
+      redirect_to @post, notice: t("flash.post.reply")
+    else
+      render :show, status: :unprocessable_entity, notice: t("flash.post.reply_error")
+    end
+  end
+
   def new
     @post = Post.new
   end
