@@ -9,6 +9,11 @@ Rails.application.routes.draw do
     resources :posts, only: %i[ new create edit update destroy ]
     resources :relationships, only: %i[ create destroy ]
   end
+
+  scope module: :posts do
+    resources :favorites, only: %i[ create destroy show ]
+  end
+  
   resources :posts, only: %i[ index show ]
   resources :users, only: [ :index, :show ]
 end
