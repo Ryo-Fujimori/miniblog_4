@@ -19,6 +19,7 @@ ja:
     user_edit: "ユーザー編集"
     user_signup: "ユーザー登録"
     user_login: "ユーザーログイン"
+    favorite_index: "お気に入りしたユーザー"
   flash:
     post:
       create: "投稿を作成しました。"
@@ -31,6 +32,10 @@ ja:
       create: "ユーザーが作成されました。"
       update: "ユーザーが更新されました。"
       destroy: "ユーザーが削除されました。"
+    favorite:
+      create: "お気に入りを登録しました。"
+      create_error: "お気に入りの登録に失敗しました。"
+      destroy: "お気に入りを削除しました。"
   controller:
     post:
       index: "投稿一覧"
