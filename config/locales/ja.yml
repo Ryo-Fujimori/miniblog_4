@@ -32,6 +32,10 @@ ja:
       create: "ユーザーが作成されました。"
       update: "ユーザーが更新されました。"
       destroy: "ユーザーが削除されました。"
+    favorite:
+      create: "お気に入りを登録しました。"
+      create_error: "お気に入りの登録に失敗しました。"
+      destroy: "お気に入りを削除しました。"
   controller:
     post:
       index: "投稿一覧"

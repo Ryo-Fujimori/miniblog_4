@@ -6,4 +6,4 @@
       - if post.image.attached?
         = image_tag post.image, class: 'img-fluid', size: '100x100'
       = link_to post.content, post_path(post)
-      = render 'favorites/favoritebutton', post: post
+      = render 'favorites/favoritebutton', post: post unless post.user_id == current_user.id
