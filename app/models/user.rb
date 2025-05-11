@@ -36,6 +36,7 @@ class User < ApplicationRecord
   end
   # ポストのお気に入りを解除するメソッド
   def unfavorite(post_id)
+    pp post_id
     favorites.find_by(post_id: post_id).destroy!
   end
   # お気に入りしているかどうかを確認するメソッド

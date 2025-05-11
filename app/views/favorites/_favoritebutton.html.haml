@@ -1,0 +1,6 @@
+-# いいねボタン
+- if user_signed_in?
+  - if current_user.favoriting?(post.id)
+    = link_to "いいね #{post.favorited_users.count}", favorite_path(id: post.id), data: { turbo_method: :delete }, class: 'btn btn-secondary'
+  - else
+    = link_to "いいね #{post.favorited_users.count}", favorites_path(id: post.id), data: { turbo_method: :post }, class: 'btn btn-primary'

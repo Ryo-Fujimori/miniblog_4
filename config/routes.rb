@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   end
 
   scope module: :posts do
-    resources :favorites, only: %i[ create destroy show ]
+    resources :favorites, only: %i[ create destroy ]
   end
   
   resources :posts, only: %i[ index show ]
