@@ -1,6 +1,5 @@
 class AddParentIdToPosts < ActiveRecord::Migration[8.0]
   def change
-    add_column :posts, :parent_id, :integer
-    add_index :posts, :parent_id
+    add_reference :posts, :parent, foreign_key: { to_table: :posts }, index: true
   end
 end

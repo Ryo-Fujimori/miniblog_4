@@ -62,6 +62,7 @@ ActiveRecord::Schema[8.0].define(version: 2025_05_11_090739) do
 
   add_foreign_key "favorites", "posts"
   add_foreign_key "favorites", "users"
+  add_foreign_key "posts", "posts", column: "parent_id"
   add_foreign_key "posts", "users"
   add_foreign_key "relationships", "users", column: "followed_id"
   add_foreign_key "relationships", "users", column: "follower_id"
