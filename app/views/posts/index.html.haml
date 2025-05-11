@@ -4,4 +4,4 @@
   - @posts.each do |post|
     %li.list-group-item.border-bottom
       = link_to post.content, post_path(post)
-      = render 'favorites/favoritebutton', post: post
+      = render 'favorites/favoritebutton', post: post unless post.user_id == current_user.id
