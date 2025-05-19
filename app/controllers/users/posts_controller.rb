@@ -45,6 +45,6 @@ class Users::PostsController < ApplicationController
     params.require(:post).permit(:content, :image, :parent_id)
   end
   def set_post
-    @post = Post.find(params[:id])
+    @post = current_user.find(params[:id])
   end
 end
