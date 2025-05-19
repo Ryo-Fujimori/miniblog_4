@@ -38,19 +38,19 @@ RSpec.describe "Posts", type: :system do
   it "空の投稿を作成しようとしたときにエラーメッセージが表示されること" do
     visit new_post_path
     fill_in "コンテンツ", with: ""
-    click_button "投稿する"
+    click_button "保存"
     expect(page).to have_content("本文を入力してください")
   end
   it "空の投稿を更新しようとしたときにエラーメッセージが表示されること" do
     visit edit_post_path(post)
     fill_in "コンテンツ", with: ""
-    click_button "投稿する"
+    click_button "保存"
     expect(page).to have_content("本文を入力してください")
   end
   it "200文字以上の投稿を作成しようとしたときにエラーメッセージが表示されること" do
     visit new_post_path
     fill_in "コンテンツ", with: "a" * 201
-    click_button "投稿する"
-    expect(page).to have_content("Contentは200文字以内で入力してください")
+    click_button "保存"
+    expect(page).to have_content("本文は200文字以内で入力してください")
   end
 end
