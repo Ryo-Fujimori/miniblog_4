@@ -8,7 +8,7 @@ class Users::RelationshipsController < ApplicationController
   end
 
   def destroy
-    current_user.unfollow(params[:id])
+    current_user.unfollow!(params[:id])
     redirect_to users_path, notice: "フォローを解除しました"
   end
 end
