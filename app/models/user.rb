@@ -17,7 +17,6 @@ class User < ApplicationRecord
   has_many :favorites, dependent: :destroy
   has_many :favorite_posts, through: :favorites, source: :post
 
-  # ユーザーが他のユーザーをフォローするメソッド
   def follow(followed_id)
     active_relationships.create(followed_id: followed_id)
   end
