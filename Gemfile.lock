@@ -1,6 +1,7 @@
 GIT
   remote: https://github.com/SonicGarden/sgcop.git
   revision: bb85ad460e5bd359a23ecb6e66fbf6240f449be9
+  branch: main
   specs:
     sgcop (1.2.6)
       rubocop (~> 1.75.1)

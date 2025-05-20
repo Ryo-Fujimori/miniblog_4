@@ -31,8 +31,8 @@ group :development, :test do
   gem "brakeman", require: false
   gem "rubocop-rails-omakase", require: false
 
-  gem "sgcop", github: "SonicGarden/sgcop"
-  gem "faker"
+gem 'sgcop', github: 'SonicGarden/sgcop', branch: 'main'
+gem "faker"
 
   gem "factory_bot_rails"
   gem "rspec-rails"
