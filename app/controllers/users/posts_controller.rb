@@ -17,7 +17,7 @@ class Users::PostsController < ApplicationController
   end
 
   def create
-    @post = current_user.posts.new(post_params)
+    @post = current_user.posts.build(post_params)
     if @post.save
       redirect_to posts_path, notice: t('flash.post.create')
     else
@@ -48,6 +48,6 @@ class Users::PostsController < ApplicationController
   end
 
   def set_post
-    @post = current_user.find(params[:id])
+    @post = current_user.posts.find(params[:id])
   end
 end
