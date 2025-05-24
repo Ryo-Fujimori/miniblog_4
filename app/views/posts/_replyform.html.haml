@@ -1,4 +1,4 @@
-= simple_form_for post do |f|
+= simple_form_for reply, url: reply_post_path do |f|
   .form-inputs
     = f.input :content, label: t('attributes.post.content') , class: 'form-control'
   .form-actions

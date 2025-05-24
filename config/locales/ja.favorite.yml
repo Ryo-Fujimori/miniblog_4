@@ -1,0 +1,8 @@
+ja:
+  view:
+    favorite_index: "お気に入りしたユーザー"
+  flash:
+    favorite:
+      create: "お気に入りを登録しました。"
+      create_error: "お気に入りの登録に失敗しました。"
+      destroy: "お気に入りを削除しました。"
