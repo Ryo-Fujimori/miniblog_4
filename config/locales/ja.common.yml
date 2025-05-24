@@ -1,0 +1,16 @@
+ja:
+  back: "戻る"
+  cancel: "キャンセル"
+  delete: "削除"
+  edit: "編集"
+  save: "保存"
+  submit: "送信"
+  update: "更新"
+  yes: "はい"
+  no: "いいえ"
+  destroy_confirm: "本当に削除しますか？"
+  view:
+  flash:
+  controller:
+  attributes:
+    blank: "未設定"
