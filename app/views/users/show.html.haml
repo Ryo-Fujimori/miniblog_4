@@ -1,32 +1,31 @@
 %h1
   = t('view.user_show')
-%p
-  = t('attributes.user.email')
-  %div
-    = @user.email
-%p
-  = t('attributes.user.name')
+%div
+  %span= t('attributes.user.email')
+  %div= @user.email
+%div
+  %span= t('attributes.user.name')
   %div
     - if @user.name.blank?
       = t('attributes.blank')
     - else
       = @user.name
-%p
-  = t('attributes.user.profile')
+%div
+  %span= t('attributes.user.profile')
   %div
     - if @user.profile.blank?
       = t('attributes.blank')
     - else
       = @user.profile
-%p
-  = t('attributes.user.blog_url')
+%div
+  %span= t('attributes.user.blog_url')
   %div
     - if @user.blog_url.blank?
       = t('attributes.blank')
     - else
       = @user.blog_url
-%p
-  = t('attributes.user.created_at')
+%div
+  %span= t('attributes.user.created_at')
   %div
     = l(@user.created_at, format: :long)
 = link_to 'Edit', edit_user_registration_path(@user), class: 'btn btn-primary'
