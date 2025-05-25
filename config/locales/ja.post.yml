@@ -1,19 +1,17 @@
 ja:
-  back: "戻る"
-  cancel: "キャンセル"
-  delete: "削除"
-  edit: "編集"
-  save: "保存"
-  submit: "送信"
-  update: "更新"
-  yes: "はい"
-  no: "いいえ"
-  destroy_confirm: "本当に削除しますか？"
   view:
     post_index: "投稿一覧"
     post_show: "投稿詳細"
     post_new: "新規投稿"
     post_edit: "投稿編集"
+  flash:
+    post:
+      create: "投稿を作成しました。"
+      update: "投稿を更新しました。"
+      destroy: "投稿を削除しました。"
+      create_error: "投稿の作成に失敗しました。"
+      update_error: "投稿の更新に失敗しました。"
+      destroy_error: "投稿の削除に失敗しました。"
   controller:
     post:
       index: "投稿一覧"
@@ -23,5 +21,6 @@ ja:
   attributes:
     post:
       content: "コンテンツ"
+      imgage: "画像"
       created_at: "作成日時"
       updated_at: "更新日時"

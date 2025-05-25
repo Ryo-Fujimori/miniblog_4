@@ -1,0 +1,18 @@
+%h1 
+  ユーザー編集
+= simple_form_for @user do |f|
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :email
+    = f.email_field :email
+  .field
+    = f.label :profile
+    = f.text_area :profile
+  .field
+    = f.label :blog_url
+    = f.text_field :blog_url
+  .actions
+    = f.submit
+= link_to '戻る', users_path

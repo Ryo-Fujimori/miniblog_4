@@ -1,0 +1,7 @@
+= simple_form_for post do |f|
+  .form-inputs
+    = f.input :content, label: t('attributes.post.content') , class: 'form-control'
+  .form-inputs
+    = f.file_field :image, accept: "image/*" ,label: t('attributes.post.image'), class: 'form-control'
+  .form-actions
+    = f.submit t('save'), class: 'btn btn-primary'
