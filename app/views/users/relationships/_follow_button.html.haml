@@ -4,4 +4,4 @@
   - if !current_user.following?(user)
     = link_to "フォロー", relationships_path(user_id: user.id), method: :post, class: "btn btn-primary",data: {turbo_method: :post }
   - else
-    = link_to "フォロー中", relationship_path(user.id), method: :delete, class: "btn btn-secondary", data: { turbo_method: :delete }
+    = link_to "フォロー中", relationship_path(relationship), method: :delete, class: "btn btn-secondary", data: { turbo_method: :delete }

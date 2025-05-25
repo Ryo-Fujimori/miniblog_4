@@ -1,65 +1,4 @@
 ja:
-  back: "戻る"
-  cancel: "キャンセル"
-  delete: "削除"
-  edit: "編集"
-  save: "保存"
-  submit: "送信"
-  update: "更新"
-  yes: "はい"
-  no: "いいえ"
-  destroy_confirm: "本当に削除しますか？"
-  view:
-    post_index: "投稿一覧"
-    post_show: "投稿詳細"
-    post_new: "新規投稿"
-    post_edit: "投稿編集"
-    user_index: "ユーザー一覧"
-    user_show: "ユーザー詳細"
-    user_edit: "ユーザー編集"
-    user_signup: "ユーザー登録"
-    user_login: "ユーザーログイン"
-    favorite_index: "お気に入りしたユーザー"
-  flash:
-    post:
-      create: "投稿を作成しました。"
-      update: "投稿を更新しました。"
-      destroy: "投稿を削除しました。"
-      create_error: "投稿の作成に失敗しました。"
-      update_error: "投稿の更新に失敗しました。"
-      destroy_error: "投稿の削除に失敗しました。"
-    user:
-      create: "ユーザーが作成されました。"
-      update: "ユーザーが更新されました。"
-      destroy: "ユーザーが削除されました。"
-    favorite:
-      create: "お気に入りを登録しました。"
-      create_error: "お気に入りの登録に失敗しました。"
-      destroy: "お気に入りを削除しました。"
-  controller:
-    post:
-      index: "投稿一覧"
-      show: "投稿詳細"
-      new: "新規投稿"
-      edit: "投稿編集"
-    user:
-      login: "ログイン"
-      logout: "ログアウト"
-  attributes:
-    blank: "未設定"
-    user:
-      name: "名前"
-      email: "メールアドレス"
-      password: "パスワード"
-      profile: "プロフィール"
-      blog_url: "ブログURL"
-      created_at: "作成日時"
-      updated_at: "更新日時"
-    post:
-      content: "コンテンツ"
-      created_at: "作成日時"
-      updated_at: "更新日時"
-# devise-i18n追加分
   activerecord:
     attributes:
       user:
@@ -86,8 +25,13 @@ ja:
         unconfirmed_email: 未確認Eメール
         unlock_token: ロック解除用トークン
         updated_at: 更新日
+      post:
+        content: 本文
+        created_at: 作成日
+        updated_at: 更新日
     models:
       user: ユーザー
+      
   devise:
     confirmations:
       confirmed: メールアドレスが確認できました。

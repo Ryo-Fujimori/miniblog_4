@@ -5,6 +5,6 @@ class CreateFavorites < ActiveRecord::Migration[8.0]
       t.references :user, null: false, foreign_key: true
       t.references :post, null: false, foreign_key: true
     end
-    add_index :favorites, [:user_id, :post_id], unique: true
+    add_index :favorites, %i[user_id post_id], unique: true
   end
 end
