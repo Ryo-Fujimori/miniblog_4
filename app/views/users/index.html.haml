@@ -4,4 +4,5 @@
   - @users.each do |user|
     %li.list-group-item
       = link_to user.email, user_path(user)
-      = render 'users/relationships/followbutton', user: user unless user == current_user
+      - unless user == current_user or current_user.nil?
+        = render 'users/relationships/follow_button', user: user , relationship: current_user.active_relationships.find_by(followed_id: user.id)

@@ -3,5 +3,8 @@
 %ul.list-group
   - @posts.each do |post|
     %li.list-group-item.border-bottom
+      - if post.image.attached?
+        = image_tag post.image, class: 'img-fluid', size: '100x100'
       = link_to post.content, post_path(post)
-      = render 'favorites/favoritebutton', post: post unless post.user_id == current_user.id
+      - unless post.user_id == current_user or current_user.nil?
+        = render 'favorites/favoritebutton', post: post

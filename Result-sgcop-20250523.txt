@@ -1,0 +1,710 @@
+Inspecting 43 files
+CC.C.CCC..C.CCCCCC......WC.CC.C.CWCWW....CC
+
+Offenses:
+
+Gemfile:1:8: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+source "https://rubygems.org"
+       ^^^^^^^^^^^^^^^^^^^^^^
+Gemfile:3:5: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+gem "rails", "~> 8.0.2"
+    ^^^^^^^
+Gemfile:3:14: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+gem "rails", "~> 8.0.2"
+             ^^^^^^^^^^
+Gemfile:5:5: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+gem "propshaft"
+    ^^^^^^^^^^^
+Gemfile:6:1: C: Bundler/GemComment: Missing gem description comment.
+gem "sqlite3", ">= 2.1"
+^^^^^^^^^^^^^^^^^^^^^^^
+Gemfile:6:5: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+gem "sqlite3", ">= 2.1"
+    ^^^^^^^^^
+Gemfile:6:16: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+gem "sqlite3", ">= 2.1"
+               ^^^^^^^^
+Gemfile:7:1: C: Bundler/GemComment: Missing gem description comment.
+gem "puma", ">= 5.0"
+^^^^^^^^^^^^^^^^^^^^
+Gemfile:7:1: C: [Correctable] Bundler/OrderedGems: Gems should be sorted in an alphabetical order within their section of the Gemfile. Gem puma should appear before sqlite3.
+gem "puma", ">= 5.0"
+^^^^^^^^^^^^^^^^^^^^
+Gemfile:7:5: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+gem "puma", ">= 5.0"
+    ^^^^^^
+Gemfile:7:13: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+gem "puma", ">= 5.0"
+            ^^^^^^^^
+Gemfile:8:1: C: [Correctable] Bundler/OrderedGems: Gems should be sorted in an alphabetical order within their section of the Gemfile. Gem jsbundling-rails should appear before puma.
+gem "jsbundling-rails"
+^^^^^^^^^^^^^^^^^^^^^^
+Gemfile:8:5: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+gem "jsbundling-rails"
+    ^^^^^^^^^^^^^^^^^^
+Gemfile:9:5: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+gem "turbo-rails"
+    ^^^^^^^^^^^^^
+Gemfile:10:1: C: [Correctable] Bundler/OrderedGems: Gems should be sorted in an alphabetical order within their section of the Gemfile. Gem stimulus-rails should appear before turbo-rails.
+gem "stimulus-rails"
+^^^^^^^^^^^^^^^^^^^^
+Gemfile:10:5: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+gem "stimulus-rails"
+    ^^^^^^^^^^^^^^^^
+Gemfile:11:1: C: [Correctable] Bundler/OrderedGems: Gems should be sorted in an alphabetical order within their section of the Gemfile. Gem cssbundling-rails should appear before stimulus-rails.
+gem "cssbundling-rails"
+^^^^^^^^^^^^^^^^^^^^^^^
+Gemfile:11:5: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+gem "cssbundling-rails"
+    ^^^^^^^^^^^^^^^^^^^
+Gemfile:12:5: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+gem "jbuilder"
+    ^^^^^^^^^^
+Gemfile:13:5: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+gem "tzinfo-data", platforms: %i[ windows jruby ]
+    ^^^^^^^^^^^^^
+Gemfile:13:34: C: [Correctable] Layout/SpaceInsidePercentLiteralDelimiters: Do not use spaces inside percent literal delimiters.
+gem "tzinfo-data", platforms: %i[ windows jruby ]
+                                 ^
+Gemfile:13:48: C: [Correctable] Layout/SpaceInsidePercentLiteralDelimiters: Do not use spaces inside percent literal delimiters.
+gem "tzinfo-data", platforms: %i[ windows jruby ]
+                                               ^
+Gemfile:14:1: C: [Correctable] Bundler/OrderedGems: Gems should be sorted in an alphabetical order within their section of the Gemfile. Gem solid_cache should appear before tzinfo-data.
+gem "solid_cache"
+^^^^^^^^^^^^^^^^^
+Gemfile:14:5: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+gem "solid_cache"
+    ^^^^^^^^^^^^^
+Gemfile:15:5: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+gem "solid_queue"
+    ^^^^^^^^^^^^^
+Gemfile:16:1: C: [Correctable] Bundler/OrderedGems: Gems should be sorted in an alphabetical order within their section of the Gemfile. Gem solid_cable should appear before solid_queue.
+gem "solid_cable"
+^^^^^^^^^^^^^^^^^
+Gemfile:16:5: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+gem "solid_cable"
+    ^^^^^^^^^^^^^
+Gemfile:17:1: C: [Correctable] Bundler/OrderedGems: Gems should be sorted in an alphabetical order within their section of the Gemfile. Gem bootsnap should appear before solid_cable.
+gem "bootsnap", require: false
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Gemfile:17:5: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+gem "bootsnap", require: false
+    ^^^^^^^^^^
+Gemfile:18:5: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+gem "thruster", require: false
+    ^^^^^^^^^^
+Gemfile:20:5: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+gem "devise"
+    ^^^^^^^^
+Gemfile:21:5: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+gem "haml-rails"
+    ^^^^^^^^^^^^
+Gemfile:22:5: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+gem "simple_form"
+    ^^^^^^^^^^^^^
+Gemfile:23:1: C: [Correctable] Bundler/OrderedGems: Gems should be sorted in an alphabetical order within their section of the Gemfile. Gem pagy should appear before simple_form.
+gem "pagy"
+^^^^^^^^^^
+Gemfile:23:5: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+gem "pagy"
+    ^^^^^^
+Gemfile:24:5: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+gem "rails-i18n"
+    ^^^^^^^^^^^^
+Gemfile:26:5: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+gem "image_processing"
+    ^^^^^^^^^^^^^^^^^^
+Gemfile:28:1: C: [Correctable] Layout/EmptyLines: Extra blank line detected. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#two-or-more-empty-lines)
+Gemfile:30:7: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+  gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
+      ^^^^^^^
+Gemfile:30:30: C: [Correctable] Layout/SpaceInsidePercentLiteralDelimiters: Do not use spaces inside percent literal delimiters.
+  gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
+                             ^
+Gemfile:30:42: C: [Correctable] Layout/SpaceInsidePercentLiteralDelimiters: Do not use spaces inside percent literal delimiters.
+  gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
+                                         ^
+Gemfile:30:55: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+  gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
+                                                      ^^^^^^^^^^^^^^^
+Gemfile:31:3: C: [Correctable] Bundler/OrderedGems: Gems should be sorted in an alphabetical order within their section of the Gemfile. Gem brakeman should appear before debug.
+  gem "brakeman", require: false
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Gemfile:31:7: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+  gem "brakeman", require: false
+      ^^^^^^^^^^
+Gemfile:32:7: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+  gem "rubocop-rails-omakase", require: false
+      ^^^^^^^^^^^^^^^^^^^^^^^
+Gemfile:34:1: C: [Correctable] Layout/IndentationConsistency: Inconsistent indentation detected. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#spaces-indentation, https://edgeguides.rubyonrails.org/contributing_to_ruby_on_rails.html#follow-the-coding-conventions)
+gem 'sgcop', github: 'SonicGarden/sgcop', branch: 'main'
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Gemfile:35:1: C: [Correctable] Bundler/OrderedGems: Gems should be sorted in an alphabetical order within their section of the Gemfile. Gem faker should appear before sgcop.
+gem "faker"
+^^^^^^^^^^^
+Gemfile:35:1: C: [Correctable] Layout/IndentationConsistency: Inconsistent indentation detected. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#spaces-indentation, https://edgeguides.rubyonrails.org/contributing_to_ruby_on_rails.html#follow-the-coding-conventions)
+gem "faker"
+^^^^^^^^^^^
+Gemfile:35:5: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+gem "faker"
+    ^^^^^^^
+Gemfile:37:7: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+  gem "factory_bot_rails"
+      ^^^^^^^^^^^^^^^^^^^
+Gemfile:38:7: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+  gem "rspec-rails"
+      ^^^^^^^^^^^^^
+Gemfile:43:7: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+  gem "web-console"
+      ^^^^^^^^^^^^^
+Gemfile:48:7: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+  gem "capybara"
+      ^^^^^^^^^^
+Gemfile:49:7: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+  gem "selenium-webdriver"
+      ^^^^^^^^^^^^^^^^^^^^
+Rakefile:4:18: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+require_relative "config/application"
+                 ^^^^^^^^^^^^^^^^^^^^
+app/controllers/posts/favorites_controller.rb:4:41: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+      redirect_to posts_path, notice: t("flash.favorite.create")
+                                        ^^^^^^^^^^^^^^^^^^^^^^^
+app/controllers/posts/favorites_controller.rb:6:61: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+      render :new, status: :unprocessable_entity, notice: t("flash.favorite.create_error")
+                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/controllers/posts/favorites_controller.rb:12:39: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    redirect_to posts_path, notice: t("flash.favorite.destroy")
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^
+app/controllers/users/posts_controller.rb:2:37: C: [Correctable] Layout/SpaceInsidePercentLiteralDelimiters: Do not use spaces inside percent literal delimiters.
+  before_action :set_post, only: %i[ edit update destroy reply ]
+                                    ^
+app/controllers/users/posts_controller.rb:2:63: C: [Correctable] Layout/SpaceInsidePercentLiteralDelimiters: Do not use spaces inside percent literal delimiters.
+  before_action :set_post, only: %i[ edit update destroy reply ]
+                                                              ^
+app/controllers/users/posts_controller.rb:9:36: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+      redirect_to @post, notice: t("flash.post.reply")
+                                   ^^^^^^^^^^^^^^^^^^
+app/controllers/users/posts_controller.rb:11:67: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+      redirect_to @post, status: :unprocessable_entity, notice: t("flash.post.reply_error")
+                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^
+app/controllers/users/posts_controller.rb:22:41: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+      redirect_to posts_path, notice: t("flash.post.create")
+                                        ^^^^^^^^^^^^^^^^^^^
+app/controllers/users/posts_controller.rb:24:61: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+      render :new, status: :unprocessable_entity, notice: t("flash.post.create_error")
+                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^
+app/controllers/users/posts_controller.rb:33:36: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+      redirect_to @post, notice: t("flash.post.update")
+                                   ^^^^^^^^^^^^^^^^^^^
+app/controllers/users/posts_controller.rb:35:62: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+      render :edit, status: :unprocessable_entity, notice: t("flash.post.update_error")
+                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+app/controllers/users/posts_controller.rb:41:38: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    redirect_to posts_url, notice: t("flash.post.destroy")
+                                     ^^^^^^^^^^^^^^^^^^^^
+app/controllers/users/posts_controller.rb:43:3: C: [Correctable] Layout/EmptyLinesAroundAccessModifier: Keep a blank line before and after private. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#empty-lines-around-access-modifier, https://edgeguides.rubyonrails.org/contributing_to_ruby_on_rails.html#follow-the-coding-conventions)
+  private
+  ^^^^^^^
+app/controllers/users/posts_controller.rb:47:3: C: [Correctable] Layout/EmptyLineBetweenDefs: Expected 1 empty line between method definitions; found 0. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#empty-lines-between-methods)
+  def set_post
+  ^^^^^^^^^^^^
+app/controllers/users/relationships_controller.rb:4:39: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+      redirect_to users_path, notice: "フォローしました"
+                                      ^^^^^^^^^^^^^^^^^^
+app/controllers/users/relationships_controller.rb:6:33: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+      render users_path, alert: "フォローに失敗しました"
+                                ^^^^^^^^^^^^^^^^^^^^^^^^
+app/controllers/users/relationships_controller.rb:12:37: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    redirect_to users_path, notice: "フォローを解除しました"
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^
+app/controllers/users_controller.rb:2:37: C: [Correctable] Layout/SpaceInsidePercentLiteralDelimiters: Do not use spaces inside percent literal delimiters.
+  before_action :set_user, only: %i[ show edit update ]
+                                    ^
+app/controllers/users_controller.rb:2:54: C: [Correctable] Layout/SpaceInsidePercentLiteralDelimiters: Do not use spaces inside percent literal delimiters.
+  before_action :set_user, only: %i[ show edit update ]
+                                                     ^
+app/controllers/users_controller.rb:16:34: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+      redirect_to @user, notice: "User was successfully updated."
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/controllers/users_controller.rb:18:59: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+      render :edit, status: :unprocessable_entity, alert: "User was not updated."
+                                                          ^^^^^^^^^^^^^^^^^^^^^^^
+app/controllers/users_controller.rb:22:3: C: [Correctable] Layout/EmptyLinesAroundAccessModifier: Keep a blank line before and after private. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#empty-lines-around-access-modifier, https://edgeguides.rubyonrails.org/contributing_to_ruby_on_rails.html#follow-the-coding-conventions)
+  private
+  ^^^^^^^
+app/controllers/users_controller.rb:28:25: C: [Correctable] Style/SymbolArray: Use %i or %I for an array of symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#percent-i)
+    params.expect(user: [ :name, :email ])
+                        ^^^^^^^^^^^^^^^^^
+app/controllers/users_controller.rb:28:26: C: [Correctable] Layout/SpaceInsideArrayLiteralBrackets: Do not use space inside array brackets.
+    params.expect(user: [ :name, :email ])
+                         ^
+app/controllers/users_controller.rb:28:40: C: Layout/SpaceInsideArrayLiteralBrackets: Do not use space inside array brackets.
+    params.expect(user: [ :name, :email ])
+                                       ^
+app/mailers/application_mailer.rb:2:17: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+  default from: "from@example.com"
+                ^^^^^^^^^^^^^^^^^^
+app/mailers/application_mailer.rb:3:10: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+  layout "mailer"
+         ^^^^^^^^
+app/models/favorite.rb:6:23: C: [Correctable] Rails/RedundantPresenceValidationOnBelongsTo: Remove explicit presence validation for user_id.
+  validates :user_id, presence: true
+                      ^^^^^^^^^^^^^^
+app/models/favorite.rb:7:23: C: [Correctable] Rails/RedundantPresenceValidationOnBelongsTo: Remove explicit presence validation for post_id.
+  validates :post_id, presence: true
+                      ^^^^^^^^^^^^^^
+app/models/post.rb:8:35: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+  belongs_to :parent, class_name: "Post", optional: true
+                                  ^^^^^^
+app/models/post.rb:9:3: C: Rails/InverseOf: Specify an :inverse_of option. (https://guides.rubyonrails.org/association_basics.html#bi-directional-associations, https://api.rubyonrails.org/classes/ActiveRecord/Associations/ClassMethods.html#module-ActiveRecord::Associations::ClassMethods-label-Setting+Inverses)
+  has_many :replies, class_name: "Post", foreign_key: "parent_id", dependent: :destroy
+  ^^^^^^^^
+app/models/post.rb:9:34: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+  has_many :replies, class_name: "Post", foreign_key: "parent_id", dependent: :destroy
+                                 ^^^^^^
+app/models/post.rb:9:55: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+  has_many :replies, class_name: "Post", foreign_key: "parent_id", dependent: :destroy
+                                                      ^^^^^^^^^^^
+app/models/relationship.rb:2:37: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+  belongs_to :follower, class_name: "User"
+                                    ^^^^^^
+app/models/relationship.rb:3:37: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+  belongs_to :followed, class_name: "User"
+                                    ^^^^^^
+app/models/relationship.rb:5:3: C: Rails/UniqueValidationWithoutIndex: Uniqueness validation should have a unique index on the database column.
+  validates :follower_id, uniqueness: { scope: :followed_id }
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/models/relationship.rb:8:3: C: [Correctable] Layout/EmptyLinesAroundAccessModifier: Keep a blank line before and after private. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#empty-lines-around-access-modifier, https://edgeguides.rubyonrails.org/contributing_to_ruby_on_rails.html#follow-the-coding-conventions)
+  private
+  ^^^^^^^
+app/models/relationship.rb:10:23: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    errors.add(:base, "ログイン中のユーザー自身はフォローできません") if follower_id == followed_id
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/models/user.rb:5:1: C: [Correctable] Layout/CommentIndentation: Incorrect indentation detected (column 0 instead of 2).
+# postの関連付け
+^^^^^^^^^^^^^^^^
+app/models/user.rb:7:1: C: [Correctable] Layout/CommentIndentation: Incorrect indentation detected (column 0 instead of 2).
+# フォロー機能の関連付け
+^^^^^^^^^^^^^^^^^^^^^^^^
+app/models/user.rb:8:3: C: Rails/InverseOf: Specify an :inverse_of option. (https://guides.rubyonrails.org/association_basics.html#bi-directional-associations, https://api.rubyonrails.org/classes/ActiveRecord/Associations/ClassMethods.html#module-ActiveRecord::Associations::ClassMethods-label-Setting+Inverses)
+  has_many :active_relationships, class_name: "Relationship",
+  ^^^^^^^^
+app/models/user.rb:8:47: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+  has_many :active_relationships, class_name: "Relationship",
+                                              ^^^^^^^^^^^^^^
+app/models/user.rb:9:12: C: [Correctable] Layout/HashAlignment: Align the keys of a hash literal if they span more than one line.
+           foreign_key: "follower_id",
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/models/user.rb:9:25: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+           foreign_key: "follower_id",
+                        ^^^^^^^^^^^^^
+app/models/user.rb:10:12: C: [Correctable] Layout/HashAlignment: Align the keys of a hash literal if they span more than one line.
+           dependent: :destroy
+           ^^^^^^^^^^^^^^^^^^^
+app/models/user.rb:11:3: C: Rails/InverseOf: Specify an :inverse_of option. (https://guides.rubyonrails.org/association_basics.html#bi-directional-associations, https://api.rubyonrails.org/classes/ActiveRecord/Associations/ClassMethods.html#module-ActiveRecord::Associations::ClassMethods-label-Setting+Inverses)
+  has_many :passive_relationships, class_name: "Relationship",
+  ^^^^^^^^
+app/models/user.rb:11:48: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+  has_many :passive_relationships, class_name: "Relationship",
+                                               ^^^^^^^^^^^^^^
+app/models/user.rb:12:12: C: [Correctable] Layout/HashAlignment: Align the keys of a hash literal if they span more than one line.
+           foreign_key: "followed_id",
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/models/user.rb:12:25: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+           foreign_key: "followed_id",
+                        ^^^^^^^^^^^^^
+app/models/user.rb:13:12: C: [Correctable] Layout/HashAlignment: Align the keys of a hash literal if they span more than one line.
+           dependent: :destroy
+           ^^^^^^^^^^^^^^^^^^^
+app/models/user.rb:14:1: C: [Correctable] Layout/CommentIndentation: Incorrect indentation detected (column 0 instead of 2).
+# プロフィールのバリデーション
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/models/user.rb:16:1: C: [Correctable] Layout/CommentIndentation: Incorrect indentation detected (column 0 instead of 2).
+# いいね機能の関連付け
+^^^^^^^^^^^^^^^^^^^^^^
+app/models/user.rb:24:3: C: [Correctable] Layout/EmptyLineBetweenDefs: Expected 1 empty line between method definitions; found 0. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#empty-lines-between-methods)
+  def unfollow!(followed_id)
+  ^^^^^^^^^^^^^
+app/models/user.rb:28:3: C: [Correctable] Layout/EmptyLineBetweenDefs: Expected 1 empty line between method definitions; found 0. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#empty-lines-between-methods)
+  def following?(followed_id)
+  ^^^^^^^^^^^^^^
+app/models/user.rb:37:3: C: [Correctable] Layout/EmptyLineBetweenDefs: Expected 1 empty line between method definitions; found 0. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#empty-lines-between-methods)
+  def unfavorite(post_id)
+  ^^^^^^^^^^^^^^
+app/models/user.rb:38:5: C: [Correctable] Rails/Output: Do not write to stdout. Use Rails's logger if you want to log.
+    pp post_id
+    ^^
+app/models/user.rb:42:3: C: [Correctable] Layout/EmptyLineBetweenDefs: Expected 1 empty line between method definitions; found 0. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#empty-lines-between-methods)
+  def favoriting?(post_id)
+  ^^^^^^^^^^^^^^^
+config/application.rb:16:23: C: [Correctable] Layout/ArgumentAlignment: Align the arguments of a method call if they span more than one line. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#no-double-indent)
+                      routing_specs: false, ...
+                      ^^^^^^^^^^^^^^^^^^^^^
+config/application.rb:22:1: C: [Correctable] Layout/TrailingEmptyLines: 1 trailing blank lines detected. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#newline-eof)
+config/environment.rb:2:18: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+require_relative "application"
+                 ^^^^^^^^^^^^^
+config/initializers/simple_form_bootstrap.rb:14:1: C: Metrics/BlockLength: Block has too many lines. [259/25]
+SimpleForm.setup do |config| ...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+config/initializers/simple_form_bootstrap.rb:22:50: W: [Correctable] Lint/UnusedBlockArgument: Unused block argument - explicit_label. If it's necessary, use _ or _explicit_label as an argument name to indicate that it won't be used. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#underscore-unused-vars)
+  config.label_text = lambda { |label, required, explicit_label| "#{label} #{required}" }
+                                                 ^^^^^^^^^^^^^^
+config/routes.rb:3:7: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+  get "up" => "rails/health#show", as: :rails_health_check
+      ^^^^
+config/routes.rb:3:15: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+  get "up" => "rails/health#show", as: :rails_health_check
+              ^^^^^^^^^^^^^^^^^^^
+config/routes.rb:5:8: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+  root "posts#index"
+       ^^^^^^^^^^^^^
+config/routes.rb:9:32: C: [Correctable] Layout/SpaceInsidePercentLiteralDelimiters: Do not use spaces inside percent literal delimiters.
+    resources :posts, only: %i[ new create edit update destroy ] do
+                               ^
+config/routes.rb:9:63: C: [Correctable] Layout/SpaceInsidePercentLiteralDelimiters: Do not use spaces inside percent literal delimiters.
+    resources :posts, only: %i[ new create edit update destroy ] do
+                                                              ^
+config/routes.rb:14:40: C: [Correctable] Layout/SpaceInsidePercentLiteralDelimiters: Do not use spaces inside percent literal delimiters.
+    resources :relationships, only: %i[ create destroy ]
+                                       ^
+config/routes.rb:14:55: C: [Correctable] Layout/SpaceInsidePercentLiteralDelimiters: Do not use spaces inside percent literal delimiters.
+    resources :relationships, only: %i[ create destroy ]
+                                                      ^
+config/routes.rb:18:36: C: [Correctable] Layout/SpaceInsidePercentLiteralDelimiters: Do not use spaces inside percent literal delimiters.
+    resources :favorites, only: %i[ create destroy ]
+                                   ^
+config/routes.rb:18:51: C: [Correctable] Layout/SpaceInsidePercentLiteralDelimiters: Do not use spaces inside percent literal delimiters.
+    resources :favorites, only: %i[ create destroy ]
+                                                  ^
+config/routes.rb:20:1: C: [Correctable] Layout/TrailingWhitespace: Trailing whitespace detected. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#no-trailing-whitespace)
+config/routes.rb:21:30: C: [Correctable] Layout/SpaceInsidePercentLiteralDelimiters: Do not use spaces inside percent literal delimiters.
+  resources :posts, only: %i[ index show ] 
+                             ^
+config/routes.rb:21:41: C: [Correctable] Layout/SpaceInsidePercentLiteralDelimiters: Do not use spaces inside percent literal delimiters.
+  resources :posts, only: %i[ index show ] 
+                                        ^
+config/routes.rb:21:43: C: [Correctable] Layout/TrailingWhitespace: Trailing whitespace detected. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#no-trailing-whitespace)
+  resources :posts, only: %i[ index show ] 
+                                          ^
+config/routes.rb:22:27: C: [Correctable] Style/SymbolArray: Use %i or %I for an array of symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#percent-i)
+  resources :users, only: [ :index, :show ]
+                          ^^^^^^^^^^^^^^^^^
+config/routes.rb:22:28: C: [Correctable] Layout/SpaceInsideArrayLiteralBrackets: Do not use space inside array brackets.
+  resources :users, only: [ :index, :show ]
+                           ^
+config/routes.rb:22:42: C: Layout/SpaceInsideArrayLiteralBrackets: Do not use space inside array brackets.
+  resources :users, only: [ :index, :show ]
+                                         ^
+db/migrate/20250506035819_devise_create_users.rb:11:59: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+      t.string :email,              null: false, default: ""
+                                                          ^^
+db/migrate/20250506035819_devise_create_users.rb:12:59: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+      t.string :encrypted_password, null: false, default: ""
+                                                          ^^
+db/migrate/20250506035819_devise_create_users.rb:39:1: C: [Correctable] Layout/EmptyLines: Extra blank line detected. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#two-or-more-empty-lines)
+db/migrate/20250506041459_add_user_to_posts.rb:3:34: C: Rails/NotNullColumn: Do not add a NOT NULL column without a default value.
+    add_reference :posts, :user, null: false, foreign_key: true
+                                 ^^^^^^^^^^^
+db/migrate/20250511040228_create_favorites.rb:8:27: C: [Correctable] Style/SymbolArray: Use %i or %I for an array of symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#percent-i)
+    add_index :favorites, [:user_id, :post_id], unique: true
+                          ^^^^^^^^^^^^^^^^^^^^
+db/migrate/20250511132621_create_active_storage_tables.active_storage.rb:22:16: C: [Correctable] Layout/SpaceInsideArrayLiteralBrackets: Do not use space inside array brackets.
+      t.index [ :key ], unique: true
+               ^
+db/migrate/20250511132621_create_active_storage_tables.active_storage.rb:22:21: C: Layout/SpaceInsideArrayLiteralBrackets: Do not use space inside array brackets.
+      t.index [ :key ], unique: true
+                    ^
+db/migrate/20250511132621_create_active_storage_tables.active_storage.rb:36:15: C: [Correctable] Style/SymbolArray: Use %i or %I for an array of symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#percent-i)
+      t.index [ :record_type, :record_id, :name, :blob_id ], name: :index_active_storage_attachments_uniqueness, unique: true
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+db/migrate/20250511132621_create_active_storage_tables.active_storage.rb:36:16: C: [Correctable] Layout/SpaceInsideArrayLiteralBrackets: Do not use space inside array brackets.
+      t.index [ :record_type, :record_id, :name, :blob_id ], name: :index_active_storage_attachments_uniqueness, unique: true
+               ^
+db/migrate/20250511132621_create_active_storage_tables.active_storage.rb:36:58: C: Layout/SpaceInsideArrayLiteralBrackets: Do not use space inside array brackets.
+      t.index [ :record_type, :record_id, :name, :blob_id ], name: :index_active_storage_attachments_uniqueness, unique: true
+                                                         ^
+db/migrate/20250511132621_create_active_storage_tables.active_storage.rb:44:15: C: [Correctable] Style/SymbolArray: Use %i or %I for an array of symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#percent-i)
+      t.index [ :blob_id, :variation_digest ], name: :index_active_storage_variant_records_uniqueness, unique: true
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+db/migrate/20250511132621_create_active_storage_tables.active_storage.rb:44:16: C: [Correctable] Layout/SpaceInsideArrayLiteralBrackets: Do not use space inside array brackets.
+      t.index [ :blob_id, :variation_digest ], name: :index_active_storage_variant_records_uniqueness, unique: true
+               ^
+db/migrate/20250511132621_create_active_storage_tables.active_storage.rb:44:44: C: Layout/SpaceInsideArrayLiteralBrackets: Do not use space inside array brackets.
+      t.index [ :blob_id, :variation_digest ], name: :index_active_storage_variant_records_uniqueness, unique: true
+                                           ^
+db/migrate/20250511132621_create_active_storage_tables.active_storage.rb:49:3: C: [Correctable] Layout/EmptyLinesAroundAccessModifier: Keep a blank line before and after private. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#empty-lines-around-access-modifier, https://edgeguides.rubyonrails.org/contributing_to_ruby_on_rails.html#follow-the-coding-conventions)
+  private
+  ^^^^^^^
+db/migrate/20250511132621_create_active_storage_tables.active_storage.rb:50:1: C: [Correctable] Layout/IndentationWidth: Use 2 (not 4) spaces for indentation. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#spaces-indentation)
+    def primary_and_foreign_key_types
+^^^^
+db/migrate/20250511132621_create_active_storage_tables.active_storage.rb:50:5: C: [Correctable] Layout/IndentationConsistency: Inconsistent indentation detected. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#spaces-indentation, https://edgeguides.rubyonrails.org/contributing_to_ruby_on_rails.html#follow-the-coding-conventions)
+    def primary_and_foreign_key_types ...
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+db/migrate/20250511132621_create_active_storage_tables.active_storage.rb:55:8: C: [Correctable] Layout/SpaceInsideArrayLiteralBrackets: Do not use space inside array brackets.
+      [ primary_key_type, foreign_key_type ]
+       ^
+db/migrate/20250511132621_create_active_storage_tables.active_storage.rb:55:43: C: Layout/SpaceInsideArrayLiteralBrackets: Do not use space inside array brackets.
+      [ primary_key_type, foreign_key_type ]
+                                          ^
+db/seeds.rb:2:1: W: [Correctable] Lint/UselessAssignment: Useless assignment to variable - admin_user. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#underscore-unused-vars)
+admin_user = User.create!(
+^^^^^^^^^^
+db/seeds.rb:3:10: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+  email: "admin@init.com",
+         ^^^^^^^^^^^^^^^^
+db/seeds.rb:4:13: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+  password: "password",
+            ^^^^^^^^^^
+db/seeds.rb:5:26: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+  password_confirmation: "password"
+                         ^^^^^^^^^^
+db/seeds.rb:10:14: W: [Correctable] Lint/UnusedBlockArgument: Unused block argument - n. You can omit the argument if you don't care about it. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#underscore-unused-vars)
+10.times do |n|
+             ^
+db/seeds.rb:13:15: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    password: "password",
+              ^^^^^^^^^^
+db/seeds.rb:14:28: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    password_confirmation: "password"
+                           ^^^^^^^^^^
+spec/factories/posts.rb:3:15: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    content { "This is a test post." }
+              ^^^^^^^^^^^^^^^^^^^^^^
+spec/factories/relationships.rb:2:3: W: Lint/EmptyBlock: Empty block detected.
+  factory :relationship do ...
+  ^^^^^^^^^^^^^^^^^^^^^^^^
+spec/factories/relationships.rb:3:1: C: [Correctable] Layout/TrailingWhitespace: Trailing whitespace detected. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#no-trailing-whitespace)
+spec/factories/users.rb:2:3: W: Lint/EmptyBlock: Empty block detected.
+  factory :user do ...
+  ^^^^^^^^^^^^^^^^
+spec/factories/users.rb:3:1: C: [Correctable] Layout/TrailingWhitespace: Trailing whitespace detected. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#no-trailing-whitespace)
+spec/system/posts_spec.rb:2:1: C: [Correctable] Rails/RootPathnameMethods: Rails.root is a Pathname, so you can use Rails.root.glob('spec/support/*.rb').
+Dir[Rails.root.join('spec/support/*.rb')].each { |f| require f }
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+spec/system/posts_spec.rb:4:16: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+RSpec.describe "Posts", type: :system do
+               ^^^^^^^
+spec/system/posts_spec.rb:6:35: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+  let(:user) { User.create(email: "test@example.com", password: "password") }
+                                  ^^^^^^^^^^^^^^^^^^
+spec/system/posts_spec.rb:6:65: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+  let(:user) { User.create(email: "test@example.com", password: "password") }
+                                                                ^^^^^^^^^^
+spec/system/posts_spec.rb:7:37: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+  let(:post) { Post.create(content: "This is a test post.", user_id: user.id) }
+                                    ^^^^^^^^^^^^^^^^^^^^^^
+spec/system/posts_spec.rb:9:1: C: [Correctable] Layout/EmptyLines: Extra blank line detected. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#two-or-more-empty-lines)
+spec/system/posts_spec.rb:13:3: C: [Correctable] RSpec/EmptyLineAfterHook: Add an empty line after before. (https://rspec.rubystyle.guide/#empty-line-after-let, https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/EmptyLineAfterHook)
+  end
+  ^^^
+spec/system/posts_spec.rb:14:6: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+  it "ポストが作成されること" do
+     ^^^^^^^^^^^^^^^^^^^^^^^^
+spec/system/posts_spec.rb:16:13: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    fill_in "コンテンツ", with: "This is a test post."
+            ^^^^^^^^^^^^
+spec/system/posts_spec.rb:16:28: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    fill_in "コンテンツ", with: "This is a test post."
+                                ^^^^^^^^^^^^^^^^^^^^^^
+spec/system/posts_spec.rb:17:18: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    click_button "保存"
+                 ^^^^^^
+spec/system/posts_spec.rb:18:34: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    expect(page).to have_content("投稿を作成しました。")
+                                 ^^^^^^^^^^^^^^^^^^^^^^
+spec/system/posts_spec.rb:19:34: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    expect(page).to have_content("This is a test post.")
+                                 ^^^^^^^^^^^^^^^^^^^^^^
+spec/system/posts_spec.rb:20:3: C: [Correctable] RSpec/EmptyLineAfterExample: Add an empty line after it. (https://rspec.rubystyle.guide/#empty-lines-around-examples, https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/EmptyLineAfterExample)
+  end
+  ^^^
+spec/system/posts_spec.rb:21:6: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+  it "post詳細ページに遷移すること" do
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+spec/system/posts_spec.rb:23:34: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    expect(page).to have_content("This is a test post.")
+                                 ^^^^^^^^^^^^^^^^^^^^^^
+spec/system/posts_spec.rb:24:3: C: [Correctable] RSpec/EmptyLineAfterExample: Add an empty line after it. (https://rspec.rubystyle.guide/#empty-lines-around-examples, https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/EmptyLineAfterExample)
+  end
+  ^^^
+spec/system/posts_spec.rb:25:6: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+  it "postが更新されること" do
+     ^^^^^^^^^^^^^^^^^^^^^^
+spec/system/posts_spec.rb:27:13: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    fill_in "コンテンツ", with: "This is an updated test post."
+            ^^^^^^^^^^^^
+spec/system/posts_spec.rb:27:28: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    fill_in "コンテンツ", with: "This is an updated test post."
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+spec/system/posts_spec.rb:28:18: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    click_button "保存"
+                 ^^^^^^
+spec/system/posts_spec.rb:29:34: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    expect(page).to have_content("投稿を更新しました。")
+                                 ^^^^^^^^^^^^^^^^^^^^^^
+spec/system/posts_spec.rb:30:34: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    expect(page).to have_content("This is an updated test post.")
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+spec/system/posts_spec.rb:31:3: C: [Correctable] RSpec/EmptyLineAfterExample: Add an empty line after it. (https://rspec.rubystyle.guide/#empty-lines-around-examples, https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/EmptyLineAfterExample)
+  end
+  ^^^
+spec/system/posts_spec.rb:32:6: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+  it "postが削除されること" do
+     ^^^^^^^^^^^^^^^^^^^^^^
+spec/system/posts_spec.rb:34:16: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    click_link "削除"
+               ^^^^^^
+spec/system/posts_spec.rb:35:34: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    expect(page).to have_content("投稿を削除しました。")
+                                 ^^^^^^^^^^^^^^^^^^^^^^
+spec/system/posts_spec.rb:36:38: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    expect(page).not_to have_content("This is a test post.")
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+spec/system/posts_spec.rb:37:3: C: [Correctable] RSpec/EmptyLineAfterExample: Add an empty line after it. (https://rspec.rubystyle.guide/#empty-lines-around-examples, https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/EmptyLineAfterExample)
+  end
+  ^^^
+spec/system/posts_spec.rb:38:6: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+  it "空の投稿を作成しようとしたときにエラーメッセージが表示されること" do
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+spec/system/posts_spec.rb:40:13: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    fill_in "コンテンツ", with: ""
+            ^^^^^^^^^^^^
+spec/system/posts_spec.rb:40:28: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    fill_in "コンテンツ", with: ""
+                                ^^
+spec/system/posts_spec.rb:41:18: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    click_button "保存"
+                 ^^^^^^
+spec/system/posts_spec.rb:42:34: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    expect(page).to have_content("本文を入力してください")
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^
+spec/system/posts_spec.rb:43:3: C: [Correctable] RSpec/EmptyLineAfterExample: Add an empty line after it. (https://rspec.rubystyle.guide/#empty-lines-around-examples, https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/EmptyLineAfterExample)
+  end
+  ^^^
+spec/system/posts_spec.rb:44:6: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+  it "空の投稿を更新しようとしたときにエラーメッセージが表示されること" do
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+spec/system/posts_spec.rb:46:13: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    fill_in "コンテンツ", with: ""
+            ^^^^^^^^^^^^
+spec/system/posts_spec.rb:46:28: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    fill_in "コンテンツ", with: ""
+                                ^^
+spec/system/posts_spec.rb:47:18: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    click_button "保存"
+                 ^^^^^^
+spec/system/posts_spec.rb:48:34: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    expect(page).to have_content("本文を入力してください")
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^
+spec/system/posts_spec.rb:49:3: C: [Correctable] RSpec/EmptyLineAfterExample: Add an empty line after it. (https://rspec.rubystyle.guide/#empty-lines-around-examples, https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/EmptyLineAfterExample)
+  end
+  ^^^
+spec/system/posts_spec.rb:50:6: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+  it "200文字以上の投稿を作成しようとしたときにエラーメッセージが表示されること" do
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+spec/system/posts_spec.rb:52:13: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    fill_in "コンテンツ", with: "a" * 201
+            ^^^^^^^^^^^^
+spec/system/posts_spec.rb:52:28: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    fill_in "コンテンツ", with: "a" * 201
+                                ^^^
+spec/system/posts_spec.rb:53:18: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    click_button "保存"
+                 ^^^^^^
+spec/system/posts_spec.rb:54:34: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    expect(page).to have_content("本文は200文字以内で入力してください")
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+spec/system/users_spec.rb:2:1: C: [Correctable] Rails/RootPathnameMethods: Rails.root is a Pathname, so you can use Rails.root.glob('spec/support/*.rb').
+Dir[Rails.root.join('spec/support/*.rb')].each { |f| require f }
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+spec/system/users_spec.rb:4:16: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+RSpec.describe "Users", type: :system do
+               ^^^^^^^
+spec/system/users_spec.rb:7:3: C: [Correctable] RSpec/EmptyLineAfterHook: Add an empty line after before. (https://rspec.rubystyle.guide/#empty-line-after-let, https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/EmptyLineAfterHook)
+  end
+  ^^^
+spec/system/users_spec.rb:9:6: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+  it "shows the user list" do
+     ^^^^^^^^^^^^^^^^^^^^^
+spec/system/users_spec.rb:11:34: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    expect(page).to have_content("ユーザー一覧")
+                                 ^^^^^^^^^^^^^^
+spec/system/users_spec.rb:12:3: C: [Correctable] RSpec/EmptyLineAfterExample: Add an empty line after it. (https://rspec.rubystyle.guide/#empty-lines-around-examples, https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/EmptyLineAfterExample)
+  end
+  ^^^
+spec/system/users_spec.rb:14:6: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+  it "creates a user" do
+     ^^^^^^^^^^^^^^^^
+spec/system/users_spec.rb:16:13: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    fill_in "user_email", with: "test@user.com"
+            ^^^^^^^^^^^^
+spec/system/users_spec.rb:16:33: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    fill_in "user_email", with: "test@user.com"
+                                ^^^^^^^^^^^^^^^
+spec/system/users_spec.rb:17:13: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    fill_in "user_password", with: "password"
+            ^^^^^^^^^^^^^^^
+spec/system/users_spec.rb:17:36: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    fill_in "user_password", with: "password"
+                                   ^^^^^^^^^^
+spec/system/users_spec.rb:18:13: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    fill_in "user_password_confirmation", with: "password"
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+spec/system/users_spec.rb:18:49: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    fill_in "user_password_confirmation", with: "password"
+                                                ^^^^^^^^^^
+spec/system/users_spec.rb:19:18: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    click_button "Sign up"
+                 ^^^^^^^^^
+spec/system/users_spec.rb:20:34: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    expect(page).to have_content("アカウント登録が完了しました。")
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+spec/system/users_spec.rb:21:3: C: [Correctable] RSpec/EmptyLineAfterExample: Add an empty line after it. (https://rspec.rubystyle.guide/#empty-lines-around-examples, https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/EmptyLineAfterExample)
+  end
+  ^^^
+spec/system/users_spec.rb:23:6: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+  it "does not create a user with empty email" do
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+spec/system/users_spec.rb:25:13: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    fill_in "user_email", with: ""
+            ^^^^^^^^^^^^
+spec/system/users_spec.rb:25:33: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    fill_in "user_email", with: ""
+                                ^^
+spec/system/users_spec.rb:26:13: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    fill_in "user_password", with: "password"
+            ^^^^^^^^^^^^^^^
+spec/system/users_spec.rb:26:36: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    fill_in "user_password", with: "password"
+                                   ^^^^^^^^^^
+spec/system/users_spec.rb:27:13: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    fill_in "user_password_confirmation", with: "password"
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+spec/system/users_spec.rb:27:49: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    fill_in "user_password_confirmation", with: "password"
+                                                ^^^^^^^^^^
+spec/system/users_spec.rb:28:18: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    click_button "Sign up"
+                 ^^^^^^^^^
+spec/system/users_spec.rb:29:34: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    expect(page).to have_content("Eメールを入力してください")
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+spec/system/users_spec.rb:30:3: C: [Correctable] RSpec/EmptyLineAfterExample: Add an empty line after it. (https://rspec.rubystyle.guide/#empty-lines-around-examples, https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/EmptyLineAfterExample)
+  end
+  ^^^
+spec/system/users_spec.rb:32:6: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+  it "shows the user detail" do
+     ^^^^^^^^^^^^^^^^^^^^^^^
+spec/system/users_spec.rb:33:31: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    user = User.create(email: "user@test.com ", password: "password")
+                              ^^^^^^^^^^^^^^^^
+spec/system/users_spec.rb:33:59: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    user = User.create(email: "user@test.com ", password: "password")
+                                                          ^^^^^^^^^^
+spec/system/users_spec.rb:35:34: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols. (https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md#consistent-string-literals)
+    expect(page).to have_content("ユーザー詳細")
+                                 ^^^^^^^^^^^^^^
+
+43 files inspected, 239 offenses detected, 223 offenses autocorrectable
