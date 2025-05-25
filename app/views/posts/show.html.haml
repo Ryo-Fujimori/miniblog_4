@@ -13,7 +13,7 @@
 - if user_signed_in?
   %p
     = t('view.post_reply')
-    = render 'posts/replyform', reply: @reply
+    = render 'posts/reply_form', reply: @reply
 - if @post.favorited_users.count > 0
   %p
     = t('view.favorites.favorited_users')
