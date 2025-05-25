@@ -44,10 +44,11 @@ class Users::PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:content, :image, :parent_id)
+    # params.require(:post).permit(:content, :image, :parent_id)
+    params.expect(post: %i[content image parent_id])
   end
 
   def set_post
-    @post = current_user.posts.find(params[:id])
+    @post = Post.find(params[:id])
   end
 end
